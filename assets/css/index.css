@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    /* background: url('https://www.bing.com/th?id=OHR.TofinoOcean_ZH-CN6555392161_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp') center center / cover no-repeat rgb(102, 102, 102); */
+    /* transition: background-image 5s; */
+}
+
+.panel {
+    margin: auto;
+}
+
+.panel .divider {
+    width: 50%;
+    margin: 20px auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.panel .title {
+    text-shadow: 0 2px 2px rgb(0 0 0 / 50%);
+    display: flex;
+    align-items: center;
+}
+
+.panel .avatar img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgb(255 255 255 / 50%), 0px 2px 20px 3px rgb(0 0 0 / 25%);
+}
+
+.panel .name {
+    font-family: 'Alegreya Black Italic';
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-left: 40px;
+}
+
+.panel .word {
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.footer {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 5px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.fade-in {
+    animation: fadeInWithBottom 2s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-animation: fadeInWithBottom 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes fadeInWithBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px); /* 标准语法 */
+        -webkit-transform: translateY(100px); /* Safari */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px); /* 标准语法 */
+        -webkit-transform: translateY(0px); /* Safari */
+    }
+}
